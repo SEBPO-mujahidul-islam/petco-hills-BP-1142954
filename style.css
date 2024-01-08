@@ -1,0 +1,1271 @@
+/*
+ * Legal Disclaimer
+ *
+ * These web fonts are licensed exclusively for use on the following:
+ * All domains belonging to Petco
+ *
+ * It is strictly forbidden to download or use these fonts on any other website domain or media.
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2020
+ */
+
+ @font-face {
+  font-family: PetcoCircularTT-Regular;
+  src: url(fonts/PetcoCircularTT-Regular.woff2) format("woff2"),
+    url(fonts/PetcoCircularTT-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: PetcoCircularTT-Bold;
+  src: url(fonts/PetcoCircularTT-Bold.woff2) format("woff2"),
+    url(fonts/PetcoCircularTT-Bold.woff) format("woff");
+}
+
+/*Default css*/
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.citrusAdSEBPO .custom-container {
+  max-width: 1277px;
+  width: 100%;
+  margin: 0 auto;
+  display: block !important;
+}
+
+.citrusAdSEBPO {
+  overflow: hidden !important;
+}
+.m-hide {
+  display: block;
+}
+
+.d-hide {
+  display: none;
+}
+/*  POV */
+.citrusAdSEBPO-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.citrusAdSEBPO__pov {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto 30px auto;
+}
+
+.citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel {
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background-image: url(images/citrus_scienceDiet_pov-bg-dsk.jpg);
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 200px;
+  background-size: cover;  
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner {
+  display: flex;
+  transition: all ease 0.5s;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item {
+  width: 100%;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper {
+  z-index: 999;
+  text-align: left;
+  align-items: flex-start;
+  min-height: 376px;
+  flex-wrap: nowrap;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__pov-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__pov-img
+  img {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__logo {
+  width: 100%;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__logo
+  img {
+  max-width: 130px;
+  margin: 0 auto;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__title
+  h1 {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: bold;
+  display: block;
+  margin: 0;
+}
+  
+.content-wrapper__product-img img{
+  max-width: 90%;
+  margin-top: 5%;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__sub-title
+  p {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-weight: 400;
+  line-height: initial;
+  max-width: 640px;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__cta {
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__cta
+  a {
+  background: #fff;    
+  display: inline-block;
+  margin: 0px 20px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  padding: 15px 39px 15px 39px;
+  border-radius: 5px;
+  color: #001952;    
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper__cta
+  a:hover {
+  color: #fff;
+  background: #001952;
+}
+
+.citrusAdSEBPO_carousel-indicators {
+  width: 94px;
+  list-style: none;
+  text-align: center;
+  left: calc(100% / 2 - 45px);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px 0 5px;
+  border-radius: 5px 5px 0 0;
+  bottom: 0px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.citrusAdSEBPO_carousel-indicators span {
+  display: inline-block;
+  cursor: pointer;
+  margin: 3px 5px 0;
+  font-size: 0;
+  line-height: 0;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  color: transparent;
+  outline: 0;
+  background: transparent;
+  border: 1px solid #00205b;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.citrusAdSEBPO_carousel-indicators span.active {
+  opacity: 1;
+  background: #00205b;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  /* transition: 0.2s ease-in; */
+  transform: scale(1);
+}
+
+.content-wrapper__pov-content--all{   
+  flex-wrap: nowrap; 
+  justify-content: flex-start;
+  padding: 40px 30px;
+}
+.content-wrapper__pov-content--middle{
+  max-width: 640px;
+  padding-left: 30px;
+}
+.content-wrapper__cta a:first-child{
+  margin-left: 0px!important;
+}
+.citrusAdSEBPO__pov-carousel__inner .content-wrapper__title,
+.citrusAdSEBPO__pov-carousel__inner .content-wrapper__sub-title {
+  width: 100%;
+}
+
+.citrusAdSEBPO__pov-carousel__inner .content-wrapper__sub-title {
+  padding: 0px;
+}
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item.pov2
+  .content-wrapper__title
+  h1,
+.citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item.pov2
+  .content-wrapper__sub-title
+  p {
+  color: #fff;
+}
+/* POV End */
+
+/* CTA Banner */
+.citrusAdSEBPO__ctaBanner{
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.citrusAdSEBPO__ctaBanner--content{
+  justify-content: space-evenly;
+}
+.citrusAdSEBPO__ctaBanner--content .col{  
+  width: 50%;
+  overflow: hidden;
+  text-align: center;
+}
+.citrusAdSEBPO__ctaBanner--content_img{
+  display: flex;
+  justify-content: center;
+}
+.citrusAdSEBPO__ctaBanner--content_img img{
+  max-width: 100%;
+}
+.citrusAdSEBPO__ctaBanner--content_text{
+  text-align: center;
+}
+.citrusAdSEBPO__ctaBanner--content_text-title{
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0px 10px;
+}
+.citrusAdSEBPO__ctaBanner--content_text-subtitle{
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0px 10px;
+}
+.citrusAdSEBPO__commonCTA button {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00205B;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 22px 60px 18px;
+  cursor: pointer;
+}
+.citrusAdSEBPO__commonCTA button:hover {
+  color: #fff;
+  background-color: #00205B;
+}
+/* CTA Banner e */
+
+
+/* Hide all scrollbar */
+.citrusAdSEBPOTabTypeId::-webkit-scrollbar {
+  display: none;
+}
+
+.citrusAdSEBPOTabTypeId {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.citrusAdSEBPO__faq_content-left::-webkit-scrollbar {
+  display: none;
+}
+
+.citrusAdSEBPO__faq_content-left {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Hide all scrollbar e */
+
+/* Product scroller */
+
+/* Common styles */
+.citrusAdSEBPO .section-title {
+  display: block;
+  text-align: center;
+  padding: 50px 15px;
+}
+
+.citrusAdSEBPO .section-title h2 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000000;
+  padding: 0 0 25px;
+  margin: 0;
+}
+
+.citrusAdSEBPO .section-title p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.citrusAdSEBPOTabId {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.citrusAdSEBPO__tab-area {
+  overflow: hidden;
+  max-width: 1253px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.citrusAdSEBPO__tab-section-title{
+  text-align: center;
+}
+.citrusAdSEBPO__tab-area .section-title h2 {
+  padding: 0;
+}
+.citrusAdSEBPO__tab-section-title h2{
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  padding: 0 25px;
+  margin-top: 30px;
+}
+.citrusAdSEBPO__tab-section-title p{
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  padding: 10px;
+  margin: 0;
+}
+.citrusAdSEBPO__tab-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.splide__pagination {
+  display: none;
+}
+
+.citrusAdSEBPO__Product {
+  display: none;
+}
+
+.citrusAdSEBPO__Product img {
+  object-fit: contain;
+}
+
+.citrusAdSEBPO-tab-card a {
+  text-align: left;
+}
+
+.citrusAdSEBPO-tab-cardImg img {
+  max-width: 100%;
+  max-height: 175px;
+}
+
+.citrusAdSEBPO-tab-card > a {
+  text-decoration: none;
+  color: #000;
+}
+
+.citrusAdSEBPO-tab-card p {
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  color: #333333;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 20px 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4em;
+  display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.citrusAdSEBPO__Product .citrusAdSEBPO-tab-cardBody h4 {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 20px;
+  margin: 0;
+  padding: 30px 0 10px;
+  min-height: 40px;
+}
+
+.citrusAdSEBPO__productCTA {
+  border: 0;
+  padding: 5px 0 0;
+  background: none;
+  text-decoration: underline;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.groupCtaDimention {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+}
+
+.groupCtaDimention p {
+  line-height: 18px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
+  margin-top: 0;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.citrusAdSEBPO_groupProductCTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 20px;
+  margin: auto;
+}
+
+.groupCtaArrow p {
+  font-size: 36px !important;
+  margin-top: 0;
+}
+
+.citrusAdSEBPO__Products {
+  padding: 0px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.citrusAdSEBPO-tab-cardImg {
+  padding: 0 10px;
+  margin: auto;
+  margin: 0 auto 10px;
+}
+
+.citrusTabShow {
+  display: block;
+}
+
+.citrusAdSEBPO__groupProductShot__item a{
+  padding: 20px 0 0;
+}
+
+.citrusAdSEBPO__groupProductShot {
+  border: 1px solid #001952;
+  border-radius: 10px;
+  text-decoration: none;
+  max-height: 300px;
+}
+
+.citrusAdSEBPO__groupProductShot__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.citrusAdSEBPO__groupProductShotImage img {
+  max-height: 144px;
+  padding: 20px 0;
+}
+
+.citrusAdSEBPO_groupProductCTA {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 20px;
+  margin: auto;
+  padding: 0;
+}
+
+.groupCtaDimention {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+}
+
+.groupCtaDimention p {
+  line-height: 18px;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
+  margin-top: 0;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.groupCtaArrow p {
+  font-size: 34px;
+  margin-top: 0;
+}
+
+.citrusAdSEBPO__tab_item {
+  text-transform: uppercase;
+  padding: 12px 20px;
+  margin: 0px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+  color: #9b9b9b;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.citrusAdSEBPO__tab_type_item, .citrusAdSEBPO__tab_type_item1 {
+  margin: 0px 5px;
+  width: 195px;
+  height: 35px;
+  border: none;
+  border-radius: 20px;
+  font-size: 13.5px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-style: normal;
+  cursor: pointer;
+  fill: #F0F0F0;
+  line-height: normal;
+  font-weight: 450;
+  color: #00205B;
+}
+
+.citrusAdSEBPO__tab_item img {
+  max-width: 50px;
+  margin: 0 auto;
+}
+
+.citrusAdSEBPO__tab_item.citrusAdSEBPO__active_tab {
+  color: #001952;
+  border-bottom: 10px solid #001952;
+  border-radius: 0;
+}
+
+.citrusAdSEBPO__tab_type_item.citrusAdSEBPO__active_tab_type, .citrusAdSEBPO__tab_type_item1.citrusAdSEBPO__active_tab_type1 {
+  color: white;
+  background: #001952;
+  font-weight: 700;
+  font-family: "PetcoCircularTT-Bold", arial !important;
+}
+
+.citrusAdSEBPOTabId {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #021b4e;
+}
+
+.citrusAdSEBPOTabTypeId {
+  max-width: 100%;
+  padding: 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* custom css */
+.splide__arrow:disabled {
+  opacity: 0;
+}
+/* Product scroller e */
+
+/* faq section s */
+.citrusAdSEBPO__faq_area{
+  width: 100%;
+  max-width: 1152px;
+  margin: 40px auto 20px auto;
+}
+.citrusAdSEBPO__faq_content{
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.citrusAdSEBPO__faq_content-left{
+  max-width: 30%;
+  flex-direction: column;
+}
+.citrusAdSEBPO__faq_content-left-col{
+  margin: 5px 0px;
+}
+
+.citrusAdSEBPO__faq_content-left-col img{
+  max-width: 100%;
+}
+
+.citrusAdSEBPO__faq_content-right{
+  max-width: 63%;
+}
+.citrusAdSEBPO__faq_content-right-title{
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-size: 24px;
+  font-weight: 700;
+  color: #001952;
+  text-align: left;
+  margin: 15px 0px;
+}
+.citrusAdSEBPO__faq_content-right-subTitle{
+  font-size: 16px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.citrusAdSEBPO__faq_content-accordion{
+  margin-bottom: 30px;
+}
+.citrusAdSEBPO__faq_accordion-item{
+  padding: 10px 0px;
+  border-top: 1px solid #000000;  
+}
+.citrusAdSEBPO__faq_accordion-item:nth-child(4){
+  border-bottom: 1px solid #000000; 
+}                                
+.citrusAdSEBPO__faq_accordion-btn{  
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #001952;
+  cursor: pointer;
+  padding: 18px;
+  width: 95%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+  transition: 0.4s; 
+}
+.citrusAdSEBPO__faq_accordion-item-content{  
+  display: none;                                                            
+  padding: 0 18px;
+  background-color: white;
+  transition: max-height 0.2s ease-out;
+}
+.citrusAdSEBPO__faq_accordion-item-content p{
+  margin: 0px 25px 30px 0px;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  line-height: 18px;
+}                                
+.citrusAdSEBPO__faq_accordion-item-content.citrusAdSEBPO__faq_accordion-item-show {
+  display: block !important;
+}
+.citrusAdSEBPO__faq_accordion-btn:after {
+  content: '\002B';
+  color: #001952;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 50px;
+}
+.citrusAdSEBPO__faq_accordion-btn-active:after {
+  content: "\2212";
+}
+.citrusAdSEBPO__faq_cta button{
+  margin-right: 20px;
+  padding: 22px 30px 18px;
+  background-color: #00205B;
+  border: 1px solid #00205B;
+  color: #ffffff;
+}
+.citrusAdSEBPO__faq_cta button:hover{
+  background-color: #ffffff;
+  color: #00205B;
+}
+/* faq section e */
+
+/* product banner section s */
+.citrusAdSEBPO__productBanner_area{
+  width: 1440px;
+  margin: 20px auto 0px auto;
+  padding: 20px 0px;
+  max-width: 100%;
+  background-color: #1F52A0;
+}
+.citrusAdSEBPO__productBanner_content{
+  text-align: center;
+  align-items: center;
+}
+.citrusAdSEBPO__productBanner-productImg{
+  max-width: 100%;
+  padding: 20px 20px 0px 20px;
+}
+.citrusAdSEBPO__productBanner_content-title{
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 20px 20px 10px 20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+.citrusAdSEBPO__productBanner_content-subtitle{
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 20px 20px 20px;
+}
+/* product banner section s */
+
+
+/* ========= responsive style =========== */
+@media (min-width: 768px) and (max-width: 1400px) {
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper__pov-img .img{
+    object-fit: cover;
+    min-height: 240px;
+  }
+  .citrusAdSEBPO__explore .citrusAdSEBPO__explore--content {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 1340px) {
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper{
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper{
+    min-height: 325px;
+  }
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__title h1{
+    font-size: 18px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__sub-title p{
+    font-size: 15px;
+  }  
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__cta a{
+    margin: 0 10px;
+    padding: 10px 25px 10px 25px;
+  } 
+}
+
+@media (max-width: 1250px) {
+  .citrusAdSEBPOTabTypeId{
+    overflow-x: scroll;
+  }  
+}
+
+@media (max-width: 1150px) {
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper{
+    min-height: 300px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__logo img{
+    max-width: 100px;
+  }
+
+  /* CTA Banner one (max-1150px) s */
+  .citrusAdSEBPO__ctaBanner--content_text-title h2{
+    font-size: 20px;
+  }
+
+  /* Product Banner max-1150px s */
+  .citrusAdSEBPO__productBanner-productImg{
+    max-width: 80%;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__title h1 {
+    font-size: 18px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__sub-title p {
+    font-size: 14px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__cta a {
+    font-size: 14px;
+    padding: 12px 20px 9px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-wrapper__pov-content--all{
+    padding: 3%;
+  }
+  .content-wrapper__pov-content--middle{
+    padding-left: 20px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper {
+    min-height: 280px;
+}
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__logo img{
+    max-width: 80px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__title h1{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__sub-title p{
+    font-size: 12px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__cta a{
+    padding: 7px 10px 5px 10px;
+    margin: 0px 10px;
+  }
+  /* cta banner max-1024px s */
+  .citrusAdSEBPO__commonCTA button{
+    padding: 12px 20px 10px;
+  }
+  .citrusAdSEBPO__ctaBanner--content_text-title h2{
+    font-size: 16px;
+  }
+  .citrusAdSEBPO__ctaBanner--content_text-subtitle{
+    font-size: 16px;
+  }
+
+  /* Productbanner max-1024px s */
+  .citrusAdSEBPO__productBanner-productImg{
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+    /* Show hide class */
+    .m-hide{
+        display: none;
+    }
+    .d-hide{
+        display: block;
+    }
+    /* Hero POV max-767 */    
+    .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel {
+      background-image: url(images/citrus_scienceDiet_pov-bg-mob.jpg);
+      background-position: center;
+    }
+    .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper__title
+    sup {
+      font-size: 14px;
+    }
+
+ .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper{
+    justify-content: center;
+  }
+  .citrusAdSEBPO__pov {
+    display: grid;
+  }
+  .citrusAdSEBPO__pov
+  .citrusAdSEBPO__pov-carousel
+  .citrusAdSEBPO__pov-carousel__inner--item
+  .content-wrapper {
+    min-height: 350px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper__pov-img
+    img {
+    width: 100vw;
+  }
+  .content-wrapper__pov-content--all{
+    padding: 5%;
+  }
+  .content-wrapper__pov-content--middle{
+    padding: 0px;
+  }
+
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper{
+    text-align: center;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper__logo {
+    padding: 45px 0 10px;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper__logo
+    img {
+    max-width: 166px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__title h1{
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__sub-title p{
+    font-size: 16px;
+  }
+  .citrusAdSEBPO__pov-carousel__inner .content-wrapper__sub-title {
+    font-size: 16px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper__cta {
+      width: 100%!important;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper__cta
+    a {
+    font-size: 16px;
+    padding: 6px 37px;
+    background: unset;
+    color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
+  .content-wrapper__cta a:first-child{
+    margin: initial!important;
+  }
+  .citrusAdSEBPO__explore .citrusAdSEBPO__explore--content {
+    overflow-x: auto;
+  }
+  .content-wrapper__product-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-wrapper__product-img img{
+    max-width: 80%;
+    margin-bottom: 10%;
+    margin-top: 0px;
+  }
+  /* common cta max-767 */
+  .citrusAdSEBPO__commonCTA button{
+    background: unset;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0px;
+  }
+  /* common cta max-767 e */
+
+  /* Product Scroller */
+    .citrusAdSEBPO .splide__arrow{
+      display: none;
+    }
+    .citrusAdSEBPO__Product {
+        min-width: 56%;
+    }
+    .citrusAdSEBPO__tab_type_item {
+      min-width: 140px;
+    }
+    .citrusAdSEBPOTabTypeId{
+      justify-content: flex-start!important;
+    }
+
+  /* FAQ max-767px */
+  .citrusAdSEBPO__faq_content {
+    flex-direction: column;
+    padding: 2%;
+  }
+  .citrusAdSEBPO__faq_content-left{
+    max-width: 100%;
+    overflow-x: scroll;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .citrusAdSEBPO__faq_content-left-col {
+    margin: 5px 10px;
+  }
+  .citrusAdSEBPO__faq_cta button{
+    border: none;
+    color: #001952;
+  }
+  .citrusAdSEBPO__faq_accordion-btn{
+    font-size: 16px;
+  }
+  .citrusAdSEBPO__faq_content-right{
+    max-width: 90%;
+  }
+  /* FAQ max-767px e */
+
+  /* Product Banner max-767px */
+  .citrusAdSEBPO__productBanner_content-col{
+    padding: 5% 0px;
+  }
+  .citrusAdSEBPO__productBanner_content{
+    flex-direction: column-reverse;
+  }
+  .citrusAdSEBPO__productBanner-productImg{
+    max-width: 80%;    
+  }
+  .citrusAdSEBPO__productBanner_content-title{
+    font-size: 16px;
+  }
+  .citrusAdSEBPO__productBanner_content-subtitle{
+    font-size: 14px;
+  }
+  /* Product Banner max-767px e */
+}
+
+@media (max-width: 575px) {
+  /* cta banner max-575px s */
+  .citrusAdSEBPO__ctaBanner--content{
+    flex-direction: column-reverse;
+  }
+  .citrusAdSEBPO__ctaBanner--content .col{
+    width: 100%;
+  }
+  .citrusAdSEBPO__ctaBanner--content_img img {
+    width: 100%;
+  }
+  .citrusAdSEBPO__ctaBanner--content_text{
+    padding: 20% 0px
+  }
+}
+
+@media (max-width: 480px) {
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__sub-title p{
+    margin: 10px;
+    font-size: 17px;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper {
+    min-height: 500px;
+  }
+  .content-wrapper__pov-content--all{
+    padding: 10px;
+  }
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__cta a{
+    font-size: 14px;
+  }
+  /* faq max-450px s */
+  .citrusAdSEBPO__faq_content-left-col img{
+    min-width: 210px;
+  }
+}
+
+@media (max-width: 360px) {
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__title h1{
+    font-size: 20px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__sub-title p{
+    margin: 10px;
+    font-size: 17px;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 320px) {
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__title h1{
+    font-size: 19px;
+  }
+  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov-carousel__inner--item 
+  .content-wrapper__sub-title p{
+    margin: 10px;
+    font-size: 16px;
+  }
+  .citrusAdSEBPO__pov
+    .citrusAdSEBPO__pov-carousel
+    .citrusAdSEBPO__pov-carousel__inner--item
+    .content-wrapper {
+    min-height: 420px;
+  }
+}
+
+
+
+
+
+
+
+
