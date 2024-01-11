@@ -122,18 +122,14 @@
         // Show the specific tab content
         document.getElementById(mainTabName).style.display = "flex";
 
-        var dogTypeItemBtns = document.getElementsByClassName("dogItemBtn");
-        var catTypeItemBtns = document.getElementsByClassName("catItemBtn");
+        // var dogTypeItemBtns = document.getElementsByClassName("dogItemBtn");
+        // var catTypeItemBtns = document.getElementsByClassName("catItemBtn");
 
-        if (mainTabName === "typeBtnDog") {         
-            // addActiveClass(dogTypeItemBtns, "dogItemBtn_active");    
-            dogTypeItemBtns.style.display = "flex";
-            // filterDogProducts("citrusHills-puppy_Dog-product");
-        } else {
-            // addActiveClass(catTypeItemBtns, "catItemBtn_active");
-            catTypeItemBtns.style.display = "flex";
-            // filterProducts("citrusHills-kitten_Cat-product");
-        }
+        // if (mainTabName === "typeBtnDog") {   
+        //     dogTypeItemBtns.style.display = "flex";
+        // } else {            
+        //     catTypeItemBtns.style.display = "flex";           
+        // }
 
       }
       
