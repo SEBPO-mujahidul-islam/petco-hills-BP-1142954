@@ -51,7 +51,9 @@
             
         };
 
-        new Splide(splideElement, splideDefaultOptions).mount();
+        if(document.querySelector(splideElement)){
+            new Splide(splideElement, splideDefaultOptions).mount();
+        }
     }
 
     /* ************************************************************************************** */
