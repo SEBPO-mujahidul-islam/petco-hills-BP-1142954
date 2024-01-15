@@ -793,6 +793,9 @@ body {
 .citrusAdSEBPO__faq_accBtnActive h6:after {
   content: "\2212";
 } */
+.citrusAdSEBPO__faq_cta a{
+  text-decoration: none;
+}
 .citrusAdSEBPO__faq_cta button{
   margin-right: 20px;
   padding: 22px 30px 18px;
@@ -1213,9 +1216,6 @@ body {
   }
   .citrusAdSEBPO_carousel-indicators{
     bottom: 5px;
-  }
-  .splide__pagination {
-    bottom: .5em;
   }
   /* CTA Banner max-767 */
   .citrusAdSEBPO__ctaBanner--content_text-subtitle p{
