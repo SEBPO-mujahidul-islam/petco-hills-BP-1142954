@@ -528,11 +528,6 @@ body {
   margin: auto;
 }
 
-.groupCtaArrow p {
-  font-size: 36px !important;
-  margin-top: 0;
-}
-
 .citrusAdSEBPO__Products {
   padding: 0px 20px;
   display: -webkit-box;
@@ -604,9 +599,24 @@ body {
   text-decoration: underline;
   text-align: left;
 }
-
-.groupCtaArrow p {
-  font-size: 34px;
+.citrusAdSEBPO__productTab_ArrowBox {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.groupCTAarrow {
+  font-family: "PetcoCircularTT-Bold", arial !important;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  /* margin-top: 0; */
+}
+.groupCTAarrow p {
+  float: right;
+  font-size: 36px !important;
   margin-top: 0;
 }
 
@@ -1255,6 +1265,13 @@ body {
     .citrusAdSEBPOTabTypeId{
       justify-content: flex-start!important;
     }
+    .groupCTAarrow {
+      font-size: 14px;
+    }
+    .groupCTAarrow p {
+      font-size: 24px !important;
+    }
+    
 
   /* FAQ max-767px */
   .citrusAdSEBPO__faq_content {
