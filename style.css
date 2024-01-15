@@ -1235,6 +1235,10 @@ body {
   /* common cta max-767 e */
 
   /* Product Scroller */
+  .citrusAdSEBPO__tab_type_item, .citrusAdSEBPO__tab_type_item1 {
+    width: 130px;
+    font-size: 12px;
+  }
   .citrusAdSEBPO__tab_item{
     width: 50%;
     margin: 0px;
