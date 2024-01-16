@@ -110,7 +110,7 @@
     // for dog active class filter
         var dogBtnContainer = document.getElementById("citrusAdSEBPOTabId");
         var dogBtns = dogBtnContainer.getElementsByClassName("citrusAdSEBPO__tab_item");
-        addActiveClass(dogBtns, "citrusAdSEBPO__active_tab");        
+        addActiveClass(dogBtns, "citrusAdSEBPO__active_tab"); 
     });
 
     function filterType(mainTabName) {
@@ -163,7 +163,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         var tabTypeDogBtnContainer = document.getElementById("typeBtnDog");
         var tabTypeDogBtns = tabTypeDogBtnContainer.getElementsByClassName("citrusAdSEBPO__tab_type_item1");
-        addActiveClass(tabTypeDogBtns, "citrusAdSEBPO__active_tab_type1");
+        addActiveClass(tabTypeDogBtns, "citrusAdSEBPO__active_tab_type1");        
     });
 
     document.addEventListener("DOMContentLoaded", function () {

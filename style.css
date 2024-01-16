@@ -290,7 +290,9 @@ body {
   p {
   color: #fff;
 }
-
+.citrusAdSEBPO__pov .splide__arrow--prev, .citrusAdSEBPO__pov .splide__arrow--next {
+  display: none;
+}
 /* POV End */
 
 /* CTA Banner */
@@ -419,13 +421,14 @@ body {
 .citrusAdSEBPO__tab-area .section-title h2 {
   padding: 0;
 }
-.citrusAdSEBPO__tab-section-title h2{
+.citrusAdSEBPO__tab-section-title h2 {
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-size: 20px;
+  line-height: 22px;
   font-weight: 700;
   color: #000000;
   padding: 0 25px;
-  margin-top: 30px;
+  margin: 30px 0px 0px 0px;
 }
 .citrusAdSEBPO__tab-section-title p{
   font-family: "PetcoCircularTT-Regular", arial !important;
@@ -606,6 +609,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 156px;
+  min-height: 220px;
 }
 .groupCTAarrow {
   font-family: "PetcoCircularTT-Bold", arial !important;
@@ -734,13 +739,15 @@ body {
 .citrusAdSEBPO__faq_content-right{
   max-width: 63%;
 }
-.citrusAdSEBPO__faq_content-right-title{
+.citrusAdSEBPO__faq_content-right-title {
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-size: 24px;
   font-weight: 700;
   color: #001952;
   text-align: left;
-  margin: 15px 0px;
+  margin: 0px 0px 15px 0px;
+  border-top: none;
+  padding: 28px 0px 0px 0px;
 }
 .citrusAdSEBPO__faq_content-right-subTitle{
   font-size: 16px;
@@ -808,7 +815,7 @@ body {
 }
 .citrusAdSEBPO__faq_cta button{
   margin-right: 20px;
-  padding: 22px 30px 18px;
+  padding: 18px 26px 16px 26px;
   background-color: #00205B;
   border: 1px solid #00205B;
   color: #ffffff;
@@ -827,12 +834,12 @@ body {
   transition: .5s;
 }
 .citrusAdSEBPO__faq_accordionItem.open{
-  padding-top: 10px;
-  padding-bottom: 40px;
+  /* padding-top: 10px; */
+  padding-bottom: 20px;
 }
-.citrusAdSEBPO__faq_accordionItem.open .citrusAdSEBPO__accTtitle{
+/* .citrusAdSEBPO__faq_accordionItem.open .citrusAdSEBPO__accTtitle{
   margin-bottom: 0px;
-}
+} */
 .citrusAdSEBPO__faq_accordionItem header{
   display: flex;
   min-height: 50px;
@@ -920,14 +927,14 @@ body {
   font-weight: 700;
   margin: 0px;
 }
-.citrusAdSEBPO__productBanner_content-subtitle{
+.citrusAdSEBPO__productBanner_content-subtitle {
   font-family: "PetcoCircularTT-Regular", arial !important;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 22px;
   color: #ffffff;
   cursor: pointer;
-  padding: 10px 20px 26px 20px;
+  padding: 8px 20px 26px 20px;
 }
 /* product banner section s */
 
@@ -1221,7 +1228,7 @@ body {
     margin-bottom: 40px;
     margin-top: 0px;
   }
-  .splide__arrow--next, .splide__arrow--prev{
+  .citrusAdSEBPO__tab-area .splide__arrow--next, .citrusAdSEBPO__tab-area .splide__arrow--prev{
     display: none!important;
   }
   .citrusAdSEBPO_carousel-indicators{
@@ -1295,7 +1302,10 @@ body {
     font-size: 16px;
   }
   .citrusAdSEBPO__faq_content-right{
-    max-width: 90%;
+    max-width: 100%;
+  }
+  .citrusAdSEBPO__faq_content-right-title {
+    border-top: 1px solid #001952;
   }
   .citrusAdSEBPO__faq_cta{
     display: flex;
@@ -1310,7 +1320,13 @@ body {
   .citrusAdSEBPO__faq_accordionItem.open {
     padding-top: 0px;
     padding-bottom: 10px;
-}
+  }
+  .citrusAdSEBPO__faq_accordionItem header .citrusAdSEBPO__accTtitle{
+    padding: 18px 0px;
+  }
+  .citrusAdSEBPO__faq_accordionItem .citrusAdSEBPO__accDes{
+    margin: 0px;
+  }
   /* FAQ max-767px e */
 
   /* Product Banner max-767px */
