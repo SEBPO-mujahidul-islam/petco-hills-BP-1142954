@@ -203,6 +203,7 @@ body {
   .content-wrapper__disclaimer{
     color: #ffffff;
     font-size: 12px;
+    line-height: 0px;
     font-family: "PetcoCircularTT-Regular", arial !important;
 }
 /* .citrusAdSEBPO__pov
@@ -324,7 +325,7 @@ body {
   text-align: center;
   font-weight: 700;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 20px;
   padding: 0px 10px;
 }
@@ -996,17 +997,17 @@ body {
   .content-wrapper{
     min-height: 300px;
   }
-  .citrusAdSEBPO__pov 
+  /* .citrusAdSEBPO__pov 
   .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item 
   .content-wrapper__logo img{
     max-width: 100px;
-  }
+  } */
 
   /* CTA Banner one (max-1150px) s */
-  .citrusAdSEBPO__ctaBanner--content_text-title h2{
+  /* .citrusAdSEBPO__ctaBanner--content_text-title h2{
     font-size: 20px;
-  }
+  } */
 
   /* Product Banner max-1150px s */
   .citrusAdSEBPO__productBanner-productImg{
@@ -1043,12 +1044,12 @@ body {
   .content-wrapper {
     min-height: 280px;
 }
-  .citrusAdSEBPO__pov 
+  /* .citrusAdSEBPO__pov 
   .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item 
   .content-wrapper__logo img{
     max-width: 80px;
-  }
+  } */
   .citrusAdSEBPO__pov 
   .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item 
@@ -1087,9 +1088,9 @@ body {
   .citrusAdSEBPO__commonCTA button{
     padding: 12px 20px 10px;
   }
-  .citrusAdSEBPO__ctaBanner--content_text-title h2{
+  /* .citrusAdSEBPO__ctaBanner--content_text-title h2{
     font-size: 16px;
-  }
+  } */
   .citrusAdSEBPO__ctaBanner--content_text-subtitle{
     font-size: 16px;
   }
@@ -1339,23 +1340,23 @@ body {
   .citrusAdSEBPO__productBanner-productImg{
     max-width: 80%;    
   }
-  .citrusAdSEBPO__productBanner_content-title{
+  /* .citrusAdSEBPO__productBanner_content-title{
     font-size: 16px;
-  }
-  .citrusAdSEBPO__productBanner_content-subtitle{
+  } */
+  /* .citrusAdSEBPO__productBanner_content-subtitle{
     font-size: 14px;
-  }
+  } */
   /* Product Banner max-767px e */
 }
 
 @media (max-width: 575px) {
-  .citrusAdSEBPO__pov 
+  /* .citrusAdSEBPO__pov 
   .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item 
   .content-wrapper__title h1 {
     font-size: 20px;
     line-height: 25px;
-}
+} */
   /* cta banner max-575px s */
   .citrusAdSEBPO__ctaBanner--content{
     flex-direction: column-reverse;
@@ -1392,7 +1393,7 @@ body {
   .citrusAdSEBPO__pov-carousel__inner--item 
   .content-wrapper__sub-title p{
     margin: 0px 10px 10px 10px;
-    font-size: 17px;
+    font-size: 16px;
   }
   .citrusAdSEBPO__pov
     .citrusAdSEBPO__pov-carousel
@@ -1400,10 +1401,14 @@ body {
     .content-wrapper {
     min-height: 500px;
   }
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .pov2 .content-wrapper__title h1{
+    font-size: 23px!important;
+    line-height: 27px!important;
+  }
+  /* .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__cta a{
     font-size: 14px;
-  }
+  } */
   /* faq max-450px s */
   .citrusAdSEBPO__faq_content-left-col img{
     min-width: 210px;
@@ -1413,29 +1418,46 @@ body {
     line-height: 18px;
   }
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item{
-    margin-left: -5%;
+    margin-left: -3%;
   }
   .content-wrapper__product-img{
     max-width: 80%;
   }
 
 }
-
-@media (max-width: 375px) {
+@media (max-width: 450px){
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
+      margin-left: -4%;
+  }
+}
+@media (max-width: 425px){
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
+      margin-left: -6%;
+  }
+}
+@media (max-width: 400px){
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
+      margin-left: -8%;
+  }
+}
+@media (max-width: 380px) {
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item{
-    margin-left: -11%;
+    margin-left: -10%;
   }
   .content-wrapper__product-img{
-    max-width: 80%;
+    max-width: 75%;
   }  
 }
 @media (max-width: 360px) {
-  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item{
+    margin-left: -12%;
+  }
+  /* .citrusAdSEBPO__pov 
   .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item 
   .content-wrapper__title h1{
     font-size: 20px;
-  }
+  } */
   .citrusAdSEBPO__pov
     .citrusAdSEBPO__pov-carousel
     .citrusAdSEBPO__pov-carousel__inner--item
@@ -1444,14 +1466,21 @@ body {
   }
 
 }
-
+@media (max-width: 340px) {
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item{
+    margin-left: -15%;
+  }
+}
 @media (max-width: 320px) {
-  .citrusAdSEBPO__pov 
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item{
+    margin-left: -18%;
+  }
+  /* .citrusAdSEBPO__pov 
   .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item 
   .content-wrapper__title h1{
     font-size: 17px;
-  }
+  } */
   .citrusAdSEBPO__pov 
   .citrusAdSEBPO__pov-carousel 
   .citrusAdSEBPO__pov-carousel__inner--item 
