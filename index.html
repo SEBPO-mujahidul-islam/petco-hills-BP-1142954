@@ -15,11 +15,11 @@
     <!-- Markup Start -->
     <div class="citrusAdSEBPO_ScienceDiet">
         <!-- Hero POV -->
-        <section class="citrusAdSEBPO__pov splide" id="image-carousel">
-            <div class="citrusAdSEBPO__pov-carousel citrusAdSEBPO_carousel splide__track">
-                <div class="citrusAdSEBPO__pov-carousel__inner citrusAdSEBPO_carousel-inner splide__list">
+        <section class="citrusAdSEBPO__pov">
+            <div class="citrusAdSEBPO__pov-carousel citrusAdSEBPO_carousel">
+                <div class="citrusAdSEBPO__pov-carousel__inner citrusAdSEBPO_carousel-inner">
                     <!-- POV 01 -->
-                    <div class="citrusAdSEBPO__pov-carousel__inner--item citrusAdSEBPO_carousel-item pov1 splide__slide" >
+                    <div class="citrusAdSEBPO__pov-carousel__inner--item citrusAdSEBPO_carousel-item pov1" >
                         <div class="content-wrapper citrusAdSEBPO__pov-content citrusAdSEBPO-flex">
                             <div class="content-wrapper__pov-content--all citrusAdSEBPO-flex">
                                 <div class="">
@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <!-- POV 02 -->
-                    <div class="citrusAdSEBPO__pov-carousel__inner--item citrusAdSEBPO_carousel-item pov2 splide__slide" >
+                    <div class="citrusAdSEBPO__pov-carousel__inner--item citrusAdSEBPO_carousel-item pov2" >
                         <div class="content-wrapper citrusAdSEBPO__pov-content citrusAdSEBPO-flex">
                             <div class="content-wrapper__pov-content--all citrusAdSEBPO-flex">
                                 <div class="">
@@ -82,7 +82,7 @@
                     </div>
 
                     <!-- POV 03 -->
-                    <div class="citrusAdSEBPO__pov-carousel__inner--item citrusAdSEBPO_carousel-item pov3 splide__slide" >
+                    <div class="citrusAdSEBPO__pov-carousel__inner--item citrusAdSEBPO_carousel-item pov3" >
                         <div class="content-wrapper citrusAdSEBPO__pov-content citrusAdSEBPO-flex">
                             <div class="content-wrapper__pov-content--all citrusAdSEBPO-flex">
                                 <div class="">
@@ -113,9 +113,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="CitrusStylesSEcarousel-controls">
+                    <span class="prev"></span> <span class="next"></span>
+                </div>
+                <div class="citrusAdSEBPO_carousel-indicators"></div>
             </div>
         </section>
-        <!-- Hero POV e -->
+        <!-- Hero POV e -->   
+
         <!-- Call to Action Banner -->
         <section class="citrusAdSEBPO__ctaBanner">
             <div class="citrusAdSEBPO__ctaBanner--content citrusAdSEBPO-flex" style="background-color: #1F52A0;">
@@ -325,15 +330,8 @@
                                         <div class="citrusAdSEBPO-tab-card citrusAdSEBPO__productTab_ArrowBox">
                                             <a href="#"  onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
-                                                    <!-- <img src="images/citrus_scienceDiet_puppy6_dog.png" alt="A bag and can of Instinct wet dog food"> -->
                                                 </div>
                                                 <div class="citrusAdSEBPO-tab-cardBody">
-                                                    <!-- <p>
-                                                        Hill's Science Diet Puppy Savory Stew with Chicken & Vegetables Wet Dog Food, 12.8 oz. 
-                                                    </p>
-                                                    <button class="citrusAdSEBPO__productCTA">
-                                                        Shop Now                                                        
-                                                    </button>   -->
                                                     <div class="groupCTAarrow">
                                                         Shop All
                                                         <p>&nbsp;→</p>
@@ -452,11 +450,8 @@
                                         <div class="citrusAdSEBPO-tab-card citrusAdSEBPO__productTab_ArrowBox">
                                             <a href="#"  onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
-                                                    <!-- <img src="images/citrusScienceDiet_kitten6_cat.png" alt="A bag and can of Instinct wet cat food"> -->
                                                 </div>
                                                 <div class="citrusAdSEBPO-tab-cardBody">
-                                                    <!-- <p>Hill's Science Diet Kitten Healthy Cuisine Roasted Chicken & Rice Medley Canned Wet Cat Food, 2.8 oz.</p>
-                                                    <button class="citrusAdSEBPO__productCTA">Shop Now</button> -->
                                                     <div class="groupCTAarrow">
                                                         Shop All
                                                         <p>&nbsp;→</p>
@@ -571,52 +566,211 @@
         <script src="splide.js"></script>
         <script src="scroller1.js"></script>
     
-        <!-- POV Scripts -->
+        
         <script>
+        // POV Scripts
+        let CitrusStylesSEcarousel = document.querySelector(".citrusAdSEBPO__pov-carousel");
+        let CitrusStylesSEcarouselInner = document.querySelector(".citrusAdSEBPO__pov-carousel__inner");
+        let prev = document.querySelector(".CitrusStylesSEcarousel-controls .prev");
+        let next = document.querySelector(".CitrusStylesSEcarousel-controls .next");
+        let slides = document.querySelectorAll(".citrusAdSEBPO__pov-carousel__inner .citrusAdSEBPO__pov-carousel__inner--item");
+        let totalSlides = slides.length;
+        let step = 100 / totalSlides;
+        let activeSlide = 0;
+        let activeIndicator = 0;
+        let direction = -1;
+        let jump = 1;
+        let interval = 5000;
+        let time;
+        //Init CitrusStylesSEcarousel
+        CitrusStylesSEcarouselInner.style.minWidth = totalSlides * 100 + "%";
+        loadIndicators();
+        loop(true);
+        //CitrusStylesSEcarousel events
+        next.addEventListener("click", () => {
+            slideToNext();
+        });
+        prev.addEventListener("click", () => {
+            slideToPrev();
+        });
+        CitrusStylesSEcarouselInner.addEventListener("transitionend", () => {
+            if (direction === -1) {
+                if (jump > 1) {
+                    for (let i = 0; i < jump; i++) {
+                        activeSlide++;
+                        CitrusStylesSEcarouselInner.append(CitrusStylesSEcarouselInner.firstElementChild);
+                    }
+                } else {
+                    activeSlide++;
+                    CitrusStylesSEcarouselInner.append(CitrusStylesSEcarouselInner.firstElementChild);
+                }
+            } else if (direction === 1) {
+                if (jump > 1) {
+                    for (let i = 0; i < jump; i++) {
+                        activeSlide--;
+                        CitrusStylesSEcarouselInner.prepend(CitrusStylesSEcarouselInner.lastElementChild);
+                    }
+                } else {
+                    activeSlide--;
+                    CitrusStylesSEcarouselInner.prepend(CitrusStylesSEcarouselInner.lastElementChild);
+                }
+            }
 
-            // POV Splide Script
-            document.addEventListener( 'DOMContentLoaded', function () {
-            var splidecarousel =  new Splide( '#image-carousel', {
-                rewind     : true, // activate speed for last to first
-                rewindSpeed: 1500, //speed of last to first
-                speed      : 1500, //speed of slide
-            } );
-                splidecarousel.mount();
-            } );
-            // POV Splide Script e
+            CitrusStylesSEcarouselInner.style.transition = "none";
+            CitrusStylesSEcarouselInner.style.transform = "translateX(0%)";
+            setTimeout(() => {
+                jump = 1;
+                CitrusStylesSEcarouselInner.style.transition = "all ease .5s";
+            });
+            updateIndicators();
+        });
+        document.querySelectorAll(".citrusAdSEBPO_carousel-indicators span").forEach((item) => {
+            item.addEventListener("click", (e) => {
+                let slideTo = parseInt(e.target.dataset.slideTo);
+                let indicators = document.querySelectorAll(".citrusAdSEBPO_carousel-indicators span");
+                indicators.forEach((item, index) => {
+                    if (item.classList.contains("active")) {
+                        activeIndicator = index;
+                    }
+                });
+                if (slideTo - activeIndicator > 1) {
+                    jump = slideTo - activeIndicator;
+                    step = jump * step;
+                    slideToNext();
+                } else if (slideTo - activeIndicator === 1) {
+                    slideToNext();
+                } else if (slideTo - activeIndicator < 0) {
+                    if (Math.abs(slideTo - activeIndicator) > 1) {
+                        jump = Math.abs(slideTo - activeIndicator);
+                        step = jump * step;
+                        slideToPrev();
+                    }
+                    slideToPrev();
+                }
+                step = 100 / totalSlides;
 
-            // Accordion s
-            const accordionContent = document.querySelectorAll(".citrusAdSEBPO__faq_accordionItem");            
-             accordionContent.forEach((item, index) => {
-                 let header = item.querySelector("header");
-                 header.addEventListener("click", () =>{
-                     item.classList.toggle("open");
-             
-                     let description = item.querySelector(".citrusAdSEBPO__accDes");
-                     if(item.classList.contains("open")){
-                         description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
-                         item.querySelector("i").classList.replace("citrusAdSEBPO__accIconPlus", "citrusAdSEBPO__iconMinus");
-                     }else{
-                         description.style.height = "0px";
-                         item.querySelector("i").classList.replace("citrusAdSEBPO__iconMinus", "citrusAdSEBPO__accIconPlus");
-                     }
-                     removeOpen(index); //calling the funtion and also passing the index number of the clicked header
-                 })
-             })
-             
-             function removeOpen(index1){
-                 accordionContent.forEach((item2, index2) => {
-                     if(index1 != index2){
-                         item2.classList.remove("open");
-             
-                         let des = item2.querySelector(".citrusAdSEBPO__accDes");
-                         des.style.height = "0px";
-                         item2.querySelector("i").classList.replace("citrusAdSEBPO__iconMinus", "citrusAdSEBPO__accIconPlus");
-                     }
-                 })
-             }
-             document.getElementById("citrusAdSEBPO__detaultAccordion").click();
-            // Accordion e
+                document.querySelector(".citrusAdSEBPO_carousel-indicators span.active").classList.remove("active");
+                e.target.classList.add("active");
+
+            });
+        });
+        CitrusStylesSEcarousel.addEventListener("mouseover", () => {
+            loop(false);
+        });
+        CitrusStylesSEcarousel.addEventListener("mouseout", () => {
+            loop(true);
+        });
+        //CitrusStylesSEcarousel functions
+        function loadIndicators() {
+            slides.forEach((slide, index) => {
+                if (index === 0) {
+                    document.querySelector(".citrusAdSEBPO_carousel-indicators").innerHTML += `<span data-slide-to="${index}" class="active"></span>`;
+                } else {
+                    document.querySelector(".citrusAdSEBPO_carousel-indicators").innerHTML += `<span data-slide-to="${index}"></span>`;
+                }
+            });
+        }
+
+        function updateIndicators() {
+            if (activeSlide > totalSlides - 1) {
+                activeSlide = 0;
+            } else if (activeSlide < 0) {
+                activeSlide = totalSlides - 1;
+            }
+            document.querySelector(".citrusAdSEBPO_carousel-indicators span.active").classList.remove("active");
+            document.querySelectorAll(".citrusAdSEBPO_carousel-indicators span")[activeSlide].classList.add("active");
+        }
+
+        function slideToNext() {
+            if (direction === 1) {
+                direction = -1;
+                CitrusStylesSEcarouselInner.prepend(CitrusStylesSEcarouselInner.lastElementChild);
+            }
+            CitrusStylesSEcarousel.style.justifyContent = "flex-start";
+            CitrusStylesSEcarouselInner.style.transform = `translateX(-${step}%)`;
+
+            let indicatorListElm = document.querySelectorAll(".citrusAdSEBPO_carousel-indicators span");
+            let activeIndicator = document.querySelector(".citrusAdSEBPO_carousel-indicators span.active");
+            activeIndicator.classList.remove("active");
+            let slideNo =  activeIndicator.getAttribute("data-slide-to");
+            let nextSlideNo = parseInt(slideNo) + 1;
+            if(nextSlideNo == indicatorListElm.length){
+                nextSlideNo = 0;
+            }
+            indicatorListElm[nextSlideNo].classList.add("active");
+        }
+
+        function slideToPrev() {
+            if (direction === -1) {
+                direction = 1;
+                CitrusStylesSEcarouselInner.append(CitrusStylesSEcarouselInner.firstElementChild);
+            }
+            CitrusStylesSEcarousel.style.justifyContent = "flex-end";
+            CitrusStylesSEcarouselInner.style.transform = `translateX(${step}%)`;
+            loop(false);
+
+            let indicatorListElm = document.querySelectorAll(".citrusAdSEBPO_carousel-indicators span");
+            let activeIndicator = document.querySelector(".citrusAdSEBPO_carousel-indicators span.active");
+            activeIndicator.classList.remove("active");
+            let slideNo = activeIndicator.getAttribute("data-slide-to");
+            let nextSlideNo = parseInt(slideNo) - 1;
+            if (nextSlideNo == indicatorListElm.length) {
+                nextSlideNo = 0;
+            }else if (nextSlideNo < 0) {
+                nextSlideNo = 0;
+            }
+
+            indicatorListElm[nextSlideNo].classList.add("active");
+
+        }
+
+        function loop(status) {
+            if (status === true) {
+                time = setInterval(() => {
+                    slideToNext();
+                }, interval);
+            } else {
+                clearInterval(time);
+            }
+        }
+        // pov loader add. before full load js pov none.
+        document.addEventListener("DOMContentLoaded", function() {
+            CitrusStylesSEcarousel.style.display = "flex";
+        });
+        // POV Script e
+
+        // Accordion s
+        const accordionContent = document.querySelectorAll(".citrusAdSEBPO__faq_accordionItem");            
+            accordionContent.forEach((item, index) => {
+                let header = item.querySelector("header");
+                header.addEventListener("click", () =>{
+                    item.classList.toggle("open");
+            
+                    let description = item.querySelector(".citrusAdSEBPO__accDes");
+                    if(item.classList.contains("open")){
+                        description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
+                        item.querySelector("i").classList.replace("citrusAdSEBPO__accIconPlus", "citrusAdSEBPO__iconMinus");
+                    }else{
+                        description.style.height = "0px";
+                        item.querySelector("i").classList.replace("citrusAdSEBPO__iconMinus", "citrusAdSEBPO__accIconPlus");
+                    }
+                    removeOpen(index); //calling the funtion and also passing the index number of the clicked header
+                })
+            })
+            
+            function removeOpen(index1){
+                accordionContent.forEach((item2, index2) => {
+                    if(index1 != index2){
+                        item2.classList.remove("open");
+            
+                        let des = item2.querySelector(".citrusAdSEBPO__accDes");
+                        des.style.height = "0px";
+                        item2.querySelector("i").classList.replace("citrusAdSEBPO__iconMinus", "citrusAdSEBPO__accIconPlus");
+                    }
+                })
+            }
+            document.getElementById("citrusAdSEBPO__detaultAccordion").click();
+        // Accordion e
         </script>
 </body>
 </html>

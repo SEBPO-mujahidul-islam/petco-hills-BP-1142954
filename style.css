@@ -1,11 +1,4 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
  * Legal Disclaimer
  *
  * These web fonts are licensed exclusively for use on the following:
@@ -199,14 +192,6 @@ body {
   line-height: 0px;
   font-family: "PetcoCircularTT-Regular", arial !important;
 }
-/* .citrusAdSEBPO__pov
-.citrusAdSEBPO__pov-carousel
-.citrusAdSEBPO__pov-carousel__inner--item
-.content-wrapper__cta
-a:hover {
-color: #fff;
-background: #001952;
-} */
 
 .citrusAdSEBPO_carousel-indicators {
   width: 94px;
@@ -228,22 +213,18 @@ background: #001952;
   margin: 3px 5px 0;
   font-size: 0;
   line-height: 0;
-  width: 12px;
-  height: 12px;
   cursor: pointer;
   color: transparent;
   outline: 0;
   background: transparent;
-  border: 1px solid #00205b;
+  border: 2px solid #001952;
   border-radius: 50%;
-  padding: 0;
+  padding: 7px;
 }
 
 .citrusAdSEBPO_carousel-indicators span.active {
   opacity: 1;
-  background: #00205b;
-  width: 12px;
-  height: 12px;
+  background: #001952;
   border-radius: 50%;
   /* transition: 0.2s ease-in; */
   -webkit-transform: scale(1);
@@ -346,12 +327,7 @@ background: #001952;
   padding: 22px 60px 18px;
   cursor: pointer;
 }
-/* .citrusAdSEBPO__commonCTA button:hover {
-color: #fff;
-background-color: #00205B;
-} */
 /* CTA Banner e */
-
 
 /* Hide all scrollbar */
 .citrusAdSEBPOTabTypeId::-webkit-scrollbar {
@@ -660,7 +636,6 @@ background-color: #00205B;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  /* margin-top: 0; */
 }
 .groupCTAarrow p {
   float: right;
@@ -822,57 +797,6 @@ background-color: #00205B;
   display: block;
   margin-bottom: 30px;
 }
-/* .citrusAdSEBPO__faq_accItemCont{
-padding: 10px 0px;
-border-top: 1px solid #000000;  
-}
-.citrusAdSEBPO__faq_accItemCont:nth-child(4){
-border-bottom: 1px solid #000000; 
-}                                 */
-/* .citrusAdSEBPO__faq_accbtn h6{  
-font-family: "PetcoCircularTT-Bold", arial !important;
-color: #001952;
-cursor: pointer;
-padding: 18px;
-width: 95%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 20px;
-line-height: 18px;
-font-weight: 700;
-transition: 0.4s; 
-}
-.citrusAdSEBPO__faq_accItemCont{  
-display: block;                                                            
-padding: 0 18px;
-background-color: white;
-transition: max-height 0.2s ease-out;
-} */
-/* .citrusAdSEBPO__faq_accItemCont p{
-margin: 0px 25px 30px 0px;
-font-family: "PetcoCircularTT-Regular", arial !important;
-font-weight: 400;
-font-size: 16px;
-line-height: 18px;
-}        
-.citrusAdSEBPO__faq_accItemContHide{
-display: none;
-}                         */
-/* .citrusAdSEBPO__faq_accordionItem.citrusAdSEBPO__faq_accordion-item-show {
-display: block !important;
-} */
-/* .citrusAdSEBPO__faq_accbtn h6:after {
-content: '\002B';
-color: #001952;
-font-weight: bold;
-float: right;
-margin-left: 5px;
-font-size: 50px;
-}
-.citrusAdSEBPO__faq_accBtnActive h6:after {
-content: "\2212";
-} */
 .citrusAdSEBPO__faq_cta a {
   text-decoration: none;
 }
@@ -883,10 +807,7 @@ content: "\2212";
   border: 1px solid #00205B;
   color: #ffffff;
 }
-/* .citrusAdSEBPO__faq_cta button:hover{
-background-color: #ffffff;
-color: #00205B;
-} */
+
 .citrusAdSEBPO__faq_accordionItem:first-child {
   border-top: 1px solid #001952;
 }
@@ -902,9 +823,7 @@ color: #00205B;
   /* padding-top: 10px; */
   padding-bottom: 20px;
 }
-/* .citrusAdSEBPO__faq_accordionItem.open .citrusAdSEBPO__accTtitle{
-margin-bottom: 0px;
-} */
+
 .citrusAdSEBPO__faq_accordionItem header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,22 +890,6 @@ margin-bottom: 0px;
   width: 26px;
   height: 26px;
 }
-/* .iconMinus:after {
-  content: "\2212";
-  color: #001952;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  font-size: 50px;
-} */
-/* .citrusAdSEBPO__accIconPlus:after {
-  content: '\002B';
-  color: #001952;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-  font-size: 50px;
-} */
 /* faq section e */
 
 /* product banner section s */
@@ -1081,18 +984,6 @@ margin-bottom: 0px;
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper {
       min-height: 300px;
   }
-  /* .citrusAdSEBPO__pov 
-.citrusAdSEBPO__pov-carousel 
-.citrusAdSEBPO__pov-carousel__inner--item 
-.content-wrapper__logo img{
-  max-width: 100px;
-} */
-
-  /* CTA Banner one (max-1150px) s */
-  /* .citrusAdSEBPO__ctaBanner--content_text-title h2{
-  font-size: 20px;
-} */
-
   /* Product Banner max-1150px s */
   .citrusAdSEBPO__productBanner-productImg {
       max-width: 80%;
@@ -1119,12 +1010,6 @@ margin-bottom: 0px;
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper {
       min-height: 280px;
   }
-  /* .citrusAdSEBPO__pov 
-.citrusAdSEBPO__pov-carousel 
-.citrusAdSEBPO__pov-carousel__inner--item 
-.content-wrapper__logo img{
-  max-width: 80px;
-} */
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__title h1 {
       font-size: 14px;
       line-height: 18px;
@@ -1138,25 +1023,12 @@ margin-bottom: 0px;
       padding: 8px 10px 6px 10px;
   }
   /* .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
-.pov1  .content-wrapper__cta{    
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: self-start;
-}
-.citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
-.pov1  .content-wrapper__cta a{
-  margin: 5px 10px;
-  margin-left: 0px;
-} */
 
   /* cta banner max-1024px s */
   .citrusAdSEBPO__commonCTA button {
       padding: 12px 20px 10px;
   }
-  /* .citrusAdSEBPO__ctaBanner--content_text-title h2{
-  font-size: 16px;
-} */
+
   .citrusAdSEBPO__ctaBanner--content_text-subtitle {
       font-size: 16px;
   }
@@ -1261,7 +1133,7 @@ margin-bottom: 0px;
   }
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__cta a {
       font-size: 16px;
-      padding: 6px 37px;
+      /* padding: 6px 37px; */
       background: unset;
       color: #ffffff;
       text-transform: capitalize;
@@ -1431,23 +1303,9 @@ margin-bottom: 0px;
   .citrusAdSEBPO__productBanner_content-cta button{
     margin-bottom: 15px;
   }
-  /* .citrusAdSEBPO__productBanner_content-title{
-  font-size: 16px;
-} */
-  /* .citrusAdSEBPO__productBanner_content-subtitle{
-  font-size: 14px;
-} */
-  /* Product Banner max-767px e */
 }
 
 @media (max-width: 575px) {
-  /* .citrusAdSEBPO__pov 
-.citrusAdSEBPO__pov-carousel 
-.citrusAdSEBPO__pov-carousel__inner--item 
-.content-wrapper__title h1 {
-  font-size: 20px;
-  line-height: 25px;
-} */
   /* cta banner max-575px s */
   .citrusAdSEBPO__ctaBanner--content {
       -webkit-box-orient: vertical;
@@ -1464,21 +1322,6 @@ margin-bottom: 0px;
   .citrusAdSEBPO__ctaBanner--content_text {
       padding: 10% 0px
   }
-  /* .citrusAdSEBPO__pov
-.citrusAdSEBPO__pov-carousel
-.pov1 {
-width: 80%!important;
-}
-.citrusAdSEBPO__pov
-.citrusAdSEBPO__pov-carousel
-.pov2 {
-width: 90%!important;
-}
-.citrusAdSEBPO__pov
-.citrusAdSEBPO__pov-carousel
-.pov3 {
-width: 100%!important;
-} */
 }
 
 @media (max-width: 480px) {
@@ -1493,10 +1336,10 @@ width: 100%!important;
       font-size: 23px !important;
       line-height: 27px !important;
   }
-  /* .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
-.citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__cta a{
-  font-size: 14px;
-} */
+  .content-wrapper__pov-content--all {
+    padding: 5% 0px;
+  }
+
   /* faq max-450px s */
   .citrusAdSEBPO__faq_content-left-col img {
       min-width: 210px;
@@ -1505,71 +1348,19 @@ width: 100%!important;
       font-size: 18px;
       line-height: 18px;
   }
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -5%;
-  }
   .content-wrapper__product-img {
       max-width: 80%;
   }
 }
-@media (max-width: 450px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -7%;
-  }
-}
-@media (max-width: 425px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -9%;
-  }
-}
-@media (max-width: 400px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -11%;
-  }
-}
+
 @media (max-width: 380px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -13%;
-  }
   .content-wrapper__product-img {
       max-width: 75%;
   }
 }
 @media (max-width: 360px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -15%;
-  }
-  /* .citrusAdSEBPO__pov 
-.citrusAdSEBPO__pov-carousel 
-.citrusAdSEBPO__pov-carousel__inner--item 
-.content-wrapper__title h1{
-  font-size: 20px;
-} */
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper {
       min-height: 450px;
   }
 
-}
-@media (max-width: 340px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -16%;
-  }
-}
-@media (max-width: 320px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item {
-      margin-left: -19%;
-  }
-  /* .citrusAdSEBPO__pov 
-.citrusAdSEBPO__pov-carousel 
-.citrusAdSEBPO__pov-carousel__inner--item 
-.content-wrapper__title h1{
-  font-size: 17px;
-} */
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__sub-title p {
-      margin: 10px;
-      font-size: 16px;
-  }
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper {
-      min-height: 420px;
-  }
 }
