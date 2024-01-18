@@ -321,7 +321,7 @@
                                     </div>
                                     <!-- tab item -->
                                     <!-- tab item 07-->
-                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab1 citrusAdSEBPO_scroller1_tab_type1 citrusAdSEBPO_scroller1_tab_type2 citrusAdSEBPO_scroller1_tab_type3 citrusAdSEBPO_scroller1_tab_type4 citrusAdSEBPO_scroller1_tab_type5 citrusAdSEBPO_scroller1_tab_type6 splide__slide citrusTabShow is-visible" id="citrusAdSEBPO_scroller1_tab1-slide07" role="group" aria-roledescription="slide" aria-label="7 of 7" style="margin-right: 20px; width: calc(16.6667% - 16.6667px);">
+                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab1 citrusAdSEBPO_scroller1_tab_type1 citrusAdSEBPO_scroller1_tab_type2 splide__slide citrusTabShow is-visible" id="citrusAdSEBPO_scroller1_tab1-slide07" role="group" aria-roledescription="slide" aria-label="7 of 7" style="margin-right: 20px; width: calc(16.6667% - 16.6667px);">
                                         <div class="citrusAdSEBPO-tab-card citrusAdSEBPO__productTab_ArrowBox">
                                             <a href="#"  onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
@@ -448,7 +448,7 @@
                                     </div>
                                     <!-- tab item -->
                                     <!-- tab item 07-->
-                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 citrusAdSEBPO_scroller1_tab_type7 citrusAdSEBPO_scroller1_tab_type8 citrusAdSEBPO_scroller1_tab_type9  splide__slide">
+                                    <div class="citrusAdSEBPO__Product citrusAdSEBPO_scroller1_tab2 citrusAdSEBPO_scroller1_tab_type7 citrusAdSEBPO_scroller1_tab_type8  splide__slide">
                                         <div class="citrusAdSEBPO-tab-card citrusAdSEBPO__productTab_ArrowBox">
                                             <a href="#"  onclick="clickTrackLink(this);">
                                                 <div class="citrusAdSEBPO-tab-cardImg">
@@ -595,10 +595,10 @@
                      let description = item.querySelector(".citrusAdSEBPO__accDes");
                      if(item.classList.contains("open")){
                          description.style.height = `${description.scrollHeight}px`; //scrollHeight property returns the height of an element including padding , but excluding borders, scrollbar or margin
-                         item.querySelector("i").classList.replace("citrusAdSEBPO__accIconPlus", "iconMinus");
+                         item.querySelector("i").classList.replace("citrusAdSEBPO__accIconPlus", "citrusAdSEBPO__iconMinus");
                      }else{
                          description.style.height = "0px";
-                         item.querySelector("i").classList.replace("iconMinus", "citrusAdSEBPO__accIconPlus");
+                         item.querySelector("i").classList.replace("citrusAdSEBPO__iconMinus", "citrusAdSEBPO__accIconPlus");
                      }
                      removeOpen(index); //calling the funtion and also passing the index number of the clicked header
                  })
@@ -611,7 +611,7 @@
              
                          let des = item2.querySelector(".citrusAdSEBPO__accDes");
                          des.style.height = "0px";
-                         item2.querySelector("i").classList.replace("iconMinus", "citrusAdSEBPO__accIconPlus");
+                         item2.querySelector("i").classList.replace("citrusAdSEBPO__iconMinus", "citrusAdSEBPO__accIconPlus");
                      }
                  })
              }

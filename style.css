@@ -698,6 +698,7 @@ background-color: #00205B;
   align-items: center;
 }
 
+
 .citrusAdSEBPO__tab_type_item, .citrusAdSEBPO__tab_type_item1 {
   margin: 0px 5px;
   width: 195px;
@@ -712,6 +713,10 @@ background-color: #00205B;
   line-height: normal;
   font-weight: 450;
   color: #00205B;
+}
+
+.citrusAdSEBPO__tab_type_item:first-child, .citrusAdSEBPO__tab_type_item1:first-child {
+  margin-left: 0px;
 }
 
 .citrusAdSEBPO__tab_item img {
@@ -748,7 +753,7 @@ background-color: #00205B;
 
 .citrusAdSEBPOTabTypeId {
   max-width: 100%;
-  padding: 0px 10px;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -954,22 +959,34 @@ margin-bottom: 0px;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.iconMinus:after {
+.citrusAdSEBPO__iconMinus{
+  background-image: url(images/CitrusAd_icon_minus.png);
+  background-size: cover;
+  width: 26px;
+  height: 7px;
+}
+.citrusAdSEBPO__accIconPlus{
+  background-image: url(images/CitrusAd_icon_plus.png);
+  background-size: cover;
+  width: 26px;
+  height: 26px;
+}
+/* .iconMinus:after {
   content: "\2212";
   color: #001952;
   font-weight: bold;
   float: right;
   margin-left: 5px;
   font-size: 50px;
-}
-.citrusAdSEBPO__accIconPlus:after {
+} */
+/* .citrusAdSEBPO__accIconPlus:after {
   content: '\002B';
   color: #001952;
   font-weight: bold;
   float: right;
   margin-left: 5px;
   font-size: 50px;
-}
+} */
 /* faq section e */
 
 /* product banner section s */
@@ -1009,6 +1026,12 @@ margin-bottom: 0px;
   color: #ffffff;
   cursor: pointer;
   padding: 8px 20px 26px 20px;
+}
+.citrusAdSEBPO__productBanner_content-logo{
+  margin-top: 5px;
+}
+.citrusAdSEBPO__productBanner_content-cta button{
+  margin-bottom: 27px;
 }
 /* product banner section s */
 
@@ -1395,6 +1418,18 @@ margin-bottom: 0px;
   }
   .citrusAdSEBPO__productBanner-productImg {
       max-width: 80%;
+  }
+  .citrusAdSEBPO__productBanner_area{
+    padding-top: 0px;
+  }
+  .citrusAdSEBPO__productBanner_content-title{
+    padding: 15px 20px 20px 20px;
+  }
+  .citrusAdSEBPO__productBanner_content-subtitle{
+    padding: 8px 20px 10px 20px;
+  }
+  .citrusAdSEBPO__productBanner_content-cta button{
+    margin-bottom: 15px;
   }
   /* .citrusAdSEBPO__productBanner_content-title{
   font-size: 16px;
