@@ -991,28 +991,15 @@ body {
   }
 }
 
-@media (max-width: 1050px) {
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__title h1 {
-      font-size: 18px;
-  }
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__sub-title p {
-      font-size: 14px;
-  }
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .content-wrapper__pov-content--all {
-      padding: 3%;
+    padding: 3%;
   }
   .content-wrapper__pov-content--middle {
       padding-left: 20px;
   }
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper {
       min-height: 280px;
-  }
-  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__title h1 {
-      font-size: 14px;
-      line-height: 18px;
   }
   .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__sub-title p {
       font-size: 12px;
@@ -1022,8 +1009,28 @@ body {
       margin: 5px;
       padding: 8px 10px 6px 10px;
   }
-  /* .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel 
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__logo img{
+    max-width: 100px;
+  }  
+}
+@media (max-width: 1050px) {
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__title h1 {
+      font-size: 18px;
+  }
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__sub-title p {
+      font-size: 14px;
+  }
 
+}
+
+@media (max-width: 1024px) {
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__title h1 {
+      font-size: 14px;
+      line-height: 18px;
+  }  
+  .citrusAdSEBPO__pov .citrusAdSEBPO__pov-carousel .citrusAdSEBPO__pov-carousel__inner--item .content-wrapper__logo img{
+    max-width: 80px;
+  }
   /* cta banner max-1024px s */
   .citrusAdSEBPO__commonCTA button {
       padding: 12px 20px 10px;
