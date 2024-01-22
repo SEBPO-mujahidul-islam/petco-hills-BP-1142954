@@ -1283,6 +1283,13 @@ body {
   .citrusAdSEBPO__faq_accordionItem .citrusAdSEBPO__accDes {
       margin: 0px;
   }
+   .citrusAdSEBPO__accIconPlus{
+    width: 20px;
+    height: 20px;
+  }
+  .citrusAdSEBPO__iconMinus{
+    width: 20px;
+  }
   /* FAQ max-767px e */
 
   /* Product Banner max-767px */
